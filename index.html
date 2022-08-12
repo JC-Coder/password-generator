@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1/css/all.css">
+    <!-- font awesome online cdn -->
+    <script src="https://kit.fontawesome.com/3efb728339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Password Generator</h2>
+        <div class="result">
+            <div class="result__title field-title">Generated Password</div>
+            <div class="result__info right">click to copy</div>
+            <div class="result__info left">copied</div>
+            <div class="result__viewbox" id="result">CLICK TO GENERATE PASSWORD </div>
+            <button id="copy-btn"><i class="fas fa-copy"></i></button>
+        </div>
+        <div class="length range__slider" data-min="4" data-max="32">
+            <div class="length__title field-title">length: <span id="slider-length-output" >16</span></div>
+            <input id="slider" type="range" min="4" max="32" value="16" />
+        </div>
+    
+        <div class="settings">
+            <span class="settings__title field-title">settings</span>
+            <div class="setting">
+                <input type="checkbox" id="uppercase" checked />
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="lowercase" checked />
+                <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="number" checked />
+                <label for="number">Include Numbers</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="symbol" />
+                <label for="symbol">Include Symbols</label>
+            </div>
+        </div>
+    
+        <button class="btn generate" id="generate">Generate Password</button>
+    </div>
+
+    <div class="app-support">
+        <a href="#" onclick="contactDev()"><i class="fas fa-phone"></i> Contact Developer </a>
+        <a href="#"><i class="fab fa-github"></i> Improve Application</a>
+    </div>
+
+    <!-- developer contact modal  -->
+
+    <div class="contact-dev-modal">
+        <span class="close-dev-modal">&times;</span>
+        <p class="title">Contact Developer</p>
+
+        <div class="dev-contact">
+            <a href="https://twitter.com/jc_coder1"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/+2349153258538"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/JC-Coder"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
